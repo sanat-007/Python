@@ -1,0 +1,140 @@
+Q1
+def print_multiplication_table(n):
+    print(f"Multiplication table for {n}:")
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+number = int(input("Enter a number: "))
+print_multiplication_table(number)
+
+Q2
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(f"{number} is a prime number.")
+else:
+    print(f"{number} is not a prime number.")
+
+Q3
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+number = int(input("Enter a number: "))
+print(f"The factorial of {number} is {factorial(number)}.")
+
+Q4
+# Creating lists
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+# Nested list
+nested_list = [list1, list2]
+print("Nested List:", nested_list)
+
+# Length of a list
+length_of_list1 = len(list1)
+print("Length of list1:", length_of_list1)
+
+# Concatenation of lists
+concatenated_list = list1 + list2
+print("Concatenated List:", concatenated_list)
+
+# Membership (checking if an element is in a list)
+element = 3
+is_member = element in list1
+print(f"Is {element} in list1?:", is_member)
+
+# Iteration through a list
+print("Iterating through list1:")
+for item in list1:
+    print(item)
+
+# Indexing
+first_element = list1[0]
+print("First element of list1:", first_element)
+
+# Slicing
+sub_list = list1[1:4]
+print("Sliced list1 from index 1 to 3:", sub_list)
+
+# List Methods
+
+# Adding an element to the end of the list using append()
+list1.append(6)
+print("List1 after appending 6:", list1)
+
+# Adding multiple elements to the end of the list using extend()
+list1.extend([7, 8])
+print("List1 after extending with [7, 8]:", list1)
+
+# Inserting an element at a specific position
+list1.insert(2, 'a')
+print("List1 after inserting 'a' at index 2:", list1)
+
+# Removing an element using remove()
+list1.remove('a')
+print("List1 after removing 'a':", list1)
+
+# Deleting an element using del
+del list1[0]
+print("List1 after deleting the first element:", list1)
+
+# Removing the last element using pop()
+last_element = list1.pop()
+print("List1 after popping the last element:", list1)
+print("Popped element:", last_element)
+
+# Clearing the list
+list1.clear()
+print("List1 after clearing all elements:", list1)
+
+Q5
+# Creating sets
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+print("Set1:", set1)
+print("Set2:", set2)
+
+# Union of sets
+union_set = set1.union(set2)
+print("Union of Set1 and Set2:", union_set)
+
+# Intersection of sets
+intersection_set = set1.intersection(set2)
+print("Intersection of Set1 and Set2:", intersection_set)
+
+# Difference of sets
+difference_set1 = set1.difference(set2)
+difference_set2 = set2.difference(set1)
+print("Difference of Set1 from Set2:", difference_set1)
+print("Difference of Set2 from Set1:", difference_set2)
+
+# Checking subset
+is_subset = set1.issubset(set2)
+print("Is Set1 a subset of Set2?:", is_subset)
+
+# Checking superset
+is_superset = set1.issuperset(set2)
+print("Is Set1 a superset of Set2?:", is_superset)
+
+# Adding an element to a set
+set1.add(6)
+print("Set1 after adding 6:", set1)
+
+# Removing an element from a set
+set1.remove(6)
+print("Set1 after removing 6:", set1)
+
+
+
